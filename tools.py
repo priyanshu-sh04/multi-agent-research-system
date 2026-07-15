@@ -26,7 +26,7 @@ def web_search(query: str) -> str:
 
     return "\n------\n".join(out)
 
-print(web_search.invoke("What is the recent news of war?"))
+# print(web_search.invoke("What is the recent news of war?"))
 
 
 @tool
@@ -44,4 +44,4 @@ def scrape_url( url : str ) -> str:
     except Exception as e:
         return f"Could not scrape URL:{str(e)}"
 
-print(scrape_url.invoke("https://www.hindustantimes.com/india-news/whats-rahul-gandhi-planning-amid-absent-from-cjp-wangchuk-protest-site-buzz-101784130047299.html"))
+# print(scrape_url.invoke("https://www.hindustantimes.com/india-news/whats-rahul-gandhi-planning-amid-absent-from-cjp-wangchuk-protest-site-buzz-101784130047299.html"))
